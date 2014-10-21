@@ -1,0 +1,13 @@
+<nav class="navdrawer-container promote-layer">
+  <h4>Navigation</h4>
+  <ul>
+    <!--<img src="{{ .Site.Params.gravatar }}?s=60">-->
+    {{range .Site.Menus.main}}
+    <li><a href="{{.Url}}">{{.Name}}</a></li>
+    {{end}}
+    <!--<li><a href="/blog">Blog</a></li>-->
+    <li><a href="{{ .Site.Params.codeeval }}" target="window">CodeEval</a></li>
+    <li><a href="{{ .Site.Params.github }}" target="window"><span class="fa fa-github-square"></span> GitHub</a></li>
+    <li><a href="{{ .Site.Params.linkedin }}" target="window"><span class="fa fa-linkedin-square"></span> LinkedIn</a></li>
+  </ul>
+</nav>

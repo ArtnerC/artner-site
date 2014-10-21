@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Casey Artner -- Designer/Developer -- @ArtnerC
+
+# THANKS
+
+  You!
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, Web Starter Kit, Hugo, Go, Chrome Dev Editor

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{.Site.LanguageCode}}" itemscope itemtype="http://schema.org/Person">
+  {{partial "head.html" .}}
+  <body>
+    {{partial "header.html" .}}
+    {{partial "nav.html" .}}
+
+    <main>
+      {{ range first 5 .Data.Pages }}
+      {{ if eq .Type "post" }}
+      <article class="post">
+        <h2 class="editorial-header post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+        {{ .Content }}
+      </article>
+      {{end}}
+      {{ end }}
+
+      <!--<p>
+        <hr>
+        <a href="http://developers.google.com/web/starter-kit">Get Started</a>
+        <a href="/styleguide">Style Guide</a>
+      </p>-->
+
+      <p><br><br><hr>&copy; {{ .Site.Copyright }}. All Rights Reserved.</span></p>
+    </main>
+
+  {{partial "footer.html" .}}
+  </body>
+</html>

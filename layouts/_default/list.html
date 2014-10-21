@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{.Site.LanguageCode}}" itemscope itemtype="http://schema.org/Person">
+  {{partial "head.html" .}}
+  <body>
+    {{partial "header.html" .}}
+    {{partial "nav.html" .}}
+
+    <main>
+      <h2 id="hello">{{.Title}}</h2>
+      <ul>
+        {{range .Data.Pages}}
+        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+        {{end}}
+      </ul>
+
+      <p><br><br><hr>&copy; {{ .Site.Copyright }}. All Rights Reserved.</span></p>
+    </main>
+
+  {{partial "footer.html" .}}
+  </body>
+</html>

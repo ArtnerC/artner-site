@@ -1,0 +1,21 @@
+baseurl = "http://www.artner.co/"
+languageCode = "en-us"
+title = "artner.co"
+copyright = "Casey Artner"
+
+[Author]
+  name = "Casey Artner"
+
+[Permalinks]
+  blog = "/:year/:month/:filename/"
+  code = "/:filename/"
+
+[Params]
+  description = "Stuff from Casey Artner"
+  twitter = "https://twitter.com/ArtnerC"
+  twittername = "@ArtnerC"
+  github = "https://github.com/ArtnerC"
+  gplus = "https://plus.google.com/+CaseyArtner"
+  linkedin = "https://www.linkedin.com/in/artnerc"
+  codeeval = "https://www.codeeval.com/profile/ArtnerC"
+  gravatar = "https://s.gravatar.com/avatar/762eca534eb7af534a0b01380a3a2d18"
